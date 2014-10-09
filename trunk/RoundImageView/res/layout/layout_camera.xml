@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffffff"
+     >
+
+    <LinearLayout
+        android:id="@+id/id_layout_preview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="visible" >
+
+      <com.alan.roundimageview.RoundImageView
+            android:id="@+id/id_img_preview"
+            android:layout_width="114dip"
+            android:layout_height="114dip"
+            android:src="@drawable/default_portrait"
+             />
+
+        <!-- <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:padding="10dp" >
+
+            <ImageButton
+                android:id="@+id/id_imgbtn_cameraBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                 />
+
+            <ImageButton
+                android:id="@+id/id_imgbtn_cameraSure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="60dp"
+                />
+        </LinearLayout> -->
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:orientation="vertical" >
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+        </View>
+
+        <LinearLayout
+            android:id="@+id/id_layout_choose"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|bottom"
+            android:orientation="vertical"
+            android:padding="15dp" >
+
+            <Button
+                android:id="@+id/id_btn_lookhead"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:textColor="#4DDAEF"
+                android:visibility="gone"
+                 />
+
+            <Button
+                android:id="@+id/id_btn_pickPhoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:textColor="#4DDAEF"
+                 />
+
+            <Button
+                android:id="@+id/id_btn_takePhoto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:textColor="#4DDAEF"
+                android:text="tip_takephoto" />
+
+            <Button
+                android:id="@+id/id_btn_cancel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:padding="15dp"
+                android:textColor="#4DDAEF"
+                android:text="tip_cancel" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
